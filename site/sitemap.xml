@@ -18,6 +18,25 @@
     </url><url>
      <loc>None</loc>
      <lastmod>2020-05-02</lastmod>
+<<<<<<< HEAD
+=======
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2020-05-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2020-05-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2020-05-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>None</loc>
+     <lastmod>2020-05-02</lastmod>
+>>>>>>> aabe0ef76b5107f9b66dd3015d2eff12284d3bd1
      <changefreq>daily</changefreq>
     </url>
 </urlset>

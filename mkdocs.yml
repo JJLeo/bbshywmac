@@ -27,6 +27,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed
   - pymdownx.tilde
+  - admonition
 
 extra_javascript:
   - 'js/extra.js'
@@ -42,3 +43,9 @@ nav:
       - 个人计划: mjx/plan.md
   - zyf: 
       - 个人计划: zyf/plan.md
+      - 每日刷题记录: 
+          - 2020.4: 
+              - 4.27: zyf/ac/2020.4/4.27.md
+              - 4.28: zyf/ac/2020.4/4.28.md
+              - 4.29: zyf/ac/2020.4/4.29.md
+              - "4.30": zyf/ac/2020.4/4.30.md
