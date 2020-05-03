@@ -39,6 +39,7 @@ nav:
       - 春季训练计划: team/plan.md
       - Week1: 
           - DP: team/Week1-DP/train.md
+          - 比赛: team/Week1-DP/contest.md
   - csk: 
       - 个人计划: csk/plan.md
   - mjx: 
