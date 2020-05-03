@@ -37,7 +37,8 @@ nav:
   - mian: index.md
   - team:
       - 春季训练计划: team/plan.md
-      - Week1-DP: team/Week1-DP/train.md
+      - Week1-2020.5.3: 
+          - DP: team/Week1-DP/train.md
   - csk: 
       - 个人计划: csk/plan.md
   - mjx: 
