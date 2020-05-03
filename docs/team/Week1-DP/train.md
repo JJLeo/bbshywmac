@@ -25,6 +25,7 @@
 ## [HDU 5951](http://acm.hdu.edu.cn/showproblem.php?pid=5951)
 
 !!! note "题意"
+	两个人竞标$n$个物品，每个人初始金钱给定，一共$n$轮，出价不同则价高者得，出价相同则奇数轮甲得，偶数轮乙得，两个人都会采取最优策略，问最后每个人会赢得几个物品。
 
 ## [HDU 5807](http://acm.hdu.edu.cn/showproblem.php?pid=5951)
 
@@ -39,6 +40,7 @@
 ## [UVA 1106](https://vjudge.net/problem/UVA-1106)
 
 !!! note "题意"
+	高度概括：斜率优化，横坐标不单调，斜率单调。
 
 ## [HDU 5730](http://acm.hdu.edu.cn/showproblem.php?pid=5730)
 
@@ -53,7 +55,9 @@
 ## [BZOJ 4601](http://www.lydsy.com/JudgeOnline/problem.php?id=4601)
 
 !!! note "题意"
+	$n×n$的方格，每个格子有权值，求从左上角走到右下角的经过格子权值和的最大值。每次行动有限制，必须分为以下两步，先向任意一个方向走任意步（可以不动），再向任意一个方向必须走到边界（如果靠边界就可以不动）。
 
 ## [LOJ 2268](https://loj.ac/problem/2268)
 
 !!! note "题意"
+	树形多重背包，每个点有$a_i$个物品，每个价值为$v_i$，体积都是$1$，另外可以选择一条链，免费（即不算体积）选择链上所有点的物品各一个，求最大价值。
