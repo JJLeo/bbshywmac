@@ -825,10 +825,18 @@
 <details class="note"><summary>题解</summary><p>对于弃牌堆中任意连续的<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>个数,我们都可以标记出他们的相对位置<span><span class="MathJax_Preview">1,2...m</span><script type="math/tex">1,2...m</script></span>,对于其中的任意一位置<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>都可以找到一个<span><span class="MathJax_Preview">nxt[i]</span><script type="math/tex">nxt[i]</script></span>使得<span><span class="MathJax_Preview">p[nxt[i]]=i</span><script type="math/tex">p[nxt[i]]=i</script></span>,由于每次操作过后第一张牌会进入到弃牌堆,因此此次操作的<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>个数相对于上一次操作的<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>个数的相对位置应为<span><span class="MathJax_Preview">nxt[i]+1</span><script type="math/tex">nxt[i]+1</script></span>,因此我们可以使用倍增,复杂度为<span><span class="MathJax_Preview">O((m+q)logn)</span><script type="math/tex">O((m+q)logn)</script></span></p>
 </details>
 <h2 id="b">B</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p>在长度为<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>的数列中选择一些数，要求相邻的数不能同时被选，求最大值；单点修改，每次修改后询问。</p>
+</div>
 <details class="note"><summary>题解</summary><p>线段树维护”只选区间左端点“，”只选区间右端点“，”区间左右端点都选“，”区间左右端点都不选“四个值即可。</p>
 </details>
 <h2 id="c">C</h2>
-<details class="note"><summary>题解</summary><p>可以发现任意一条路径一定可以拆分成<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>到<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>和<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>到<span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span>，其中<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>是特殊点，而<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>只有200，因此以每个特殊点为起点来<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次正反图SPFA，每次暴力枚举中转点就卡过去了。</p>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p><span><span class="MathJax_Preview">n(n&lt;=20000)</span><script type="math/tex">n(n<=20000)</script></span>个点<span><span class="MathJax_Preview">m(m&lt;=20000)</span><script type="math/tex">m(m<=20000)</script></span>条边的有向图，其中有<span><span class="MathJax_Preview">k(k&lt;=200)</span><script type="math/tex">k(k<=200)</script></span>个点是特殊点，保证每条边起点和终点至少有一个是特殊点，<span><span class="MathJax_Preview">q(q&lt;=50000)</span><script type="math/tex">q(q<=50000)</script></span>次询问求两点间最短路。</p>
+</div>
+<details class="note"><summary>题解</summary><p>可以发现任意一条路径一定可以拆分成<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>到<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>和<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>到<span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span>，其中<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>是特殊点，而<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>只有<span><span class="MathJax_Preview">200</span><script type="math/tex">200</script></span>，因此以每个特殊点为起点来<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次正反图SPFA，每次暴力枚举中转点就卡过去了。</p>
 </details>
 <h2 id="d">D</h2>
 <div class="admonition note">
