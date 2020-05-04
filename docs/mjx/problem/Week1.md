@@ -1,6 +1,6 @@
 # Week1
 
-## CF1348E
+## [CF1348E](https://codeforces.com/problemset/problem/1348/E)
 
 !!! note "题意"
     $n$棵树,每棵树上有$a_i$个红果实和$b_i$个蓝果实。有可以装$k$个果实的篮子,一个篮子只能放同种颜色或同一棵树上的果实。求最多可以放满多少个篮子
