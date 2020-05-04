@@ -839,6 +839,10 @@
 <details class="note"><summary>题解</summary><p>可以发现任意一条路径一定可以拆分成<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>到<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>和<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>到<span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span>，其中<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>是特殊点，而<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>只有<span><span class="MathJax_Preview">200</span><script type="math/tex">200</script></span>，因此以每个特殊点为起点来<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次正反图SPFA，每次暴力枚举中转点就卡过去了。</p>
 </details>
 <h2 id="d">D</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p><span><span class="MathJax_Preview">n(1&lt;=n&lt;=100)</span><script type="math/tex">n(1<=n<=100)</script></span>头未拥有的牛，每个牛的形容词数量为<span><span class="MathJax_Preview">2~30</span><script type="math/tex">2~30</script></span>，同时拥有所有其他组合情况的牛（最多<span><span class="MathJax_Preview">1e9</span><script type="math/tex">1e9</script></span>），问拥有的牛中字典序第k小的牛的形容词组合</p>
+</div>
 <details class="note"><summary>题解</summary><p>把字典序转换成进制，直接求出不同组合情况的排名，将未拥有的牛加入，如果排名<span><span class="MathJax_Preview">&lt;=k</span><script type="math/tex"><=k</script></span>，<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>就<span><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span>，求所有牛的第k小即可</p>
 </details>
 <h2 id="e">E</h2>
@@ -847,17 +851,37 @@
 </div>
 <details class="note"><summary>题解</summary></details>
 <h2 id="f">F</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p>一个表盘为圆形的锁，两种三元组可以打开锁（可能相同），如果某个三元组与正确三元组对应位置的数字在锁上的距离<span><span class="MathJax_Preview">&lt;=2</span><script type="math/tex"><=2</script></span>同样可以打开，询问能打开的方案数</p>
+</div>
 <details class="note"><summary>题解</summary><p>每位最多<span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span>种情况，直接暴力跑一遍即可</p>
 </details>
 <h2 id="g">G</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p>数轴上<span><span class="MathJax_Preview">n(1&lt;=n&lt;=1000)</span><script type="math/tex">n(1<=n<=1000)</script></span>个带权目标点，选一个点和方向开始跳跃，每次跳跃的距离必须<span><span class="MathJax_Preview">&gt;=</span><script type="math/tex">>=</script></span>上次跳跃的距离，求最大得分</p>
+</div>
 <details class="note"><summary>题解</summary><p><span><span class="MathJax_Preview">dp[i][j]</span><script type="math/tex">dp[i][j]</script></span>记录从<span><span class="MathJax_Preview">j</span><script type="math/tex">j</script></span>跳到<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>的最大得分，<span><span class="MathJax_Preview">f[i][j]</span><script type="math/tex">f[i][j]</script></span>记录相反方向，左右方向分别dp取最大值即可</p>
 </details>
 <h2 id="h">H</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p><span><span class="MathJax_Preview">n(1&lt;=n&lt;=50000)</span><script type="math/tex">n(1<=n<=50000)</script></span>头牛，如果一头牛两侧<span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span>的区域里各有身高在她<span><span class="MathJax_Preview">2</span><script type="math/tex">2</script></span>倍及以上的牛，这头牛就会感到“拥挤”，求这种牛的个数</p>
+</div>
 <details class="note"><summary>题解</summary><p>考虑两棵平衡树，一个记录坐标，一个记录高度，每次找合法区间的最大值是否满足，正反各来一次即可。（也可以用单调队列或暴力）</p>
 </details>
 <h2 id="i">I</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p>同<span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span></p>
+</div>
 <details class="note"><summary>题解</summary></details>
 <h2 id="j">J</h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p><span><span class="MathJax_Preview">k(1&lt;=k&lt;=16)</span><script type="math/tex">k(1<=k<=16)</script></span>枚硬币，每枚面额在<span><span class="MathJax_Preview">1~1e9</span><script type="math/tex">1~1e9</script></span>，进行连续的<span><span class="MathJax_Preview">n(1&lt;=n&lt;=100000)</span><script type="math/tex">n(1<=n<=100000)</script></span>次购买，每次可以选择一枚硬币对任意一段购买区间付账，没有找零，问最多剩余多少钱，无法全部购买输出<span><span class="MathJax_Preview">-1</span><script type="math/tex">-1</script></span></p>
+</div>
 <details class="note"><summary>题解</summary><p>状压<span><span class="MathJax_Preview">dp</span><script type="math/tex">dp</script></span>，<span><span class="MathJax_Preview">dp[sta]</span><script type="math/tex">dp[sta]</script></span>表示状态<span><span class="MathJax_Preview">sta</span><script type="math/tex">sta</script></span>下最多从<span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>开始购买的数量（前缀和），每次枚举当前没有花的钱币，二分查找即可。</p>
 </details>
 <h2 id="k">K</h2>
