@@ -839,40 +839,27 @@
 <details class="note"><summary>题解</summary><p>可以发现任意一条路径一定可以拆分成<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>到<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>和<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>到<span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span>，其中<span><span class="MathJax_Preview">B</span><script type="math/tex">B</script></span>是特殊点，而<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>只有<span><span class="MathJax_Preview">200</span><script type="math/tex">200</script></span>，因此以每个特殊点为起点来<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次正反图SPFA，每次暴力枚举中转点就卡过去了。</p>
 </details>
 <h2 id="d">D</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
-<details class="note"><summary>题解</summary></details>
+<details class="note"><summary>题解</summary><p>把字典序转换成进制，直接求出不同组合情况的排名，将未拥有的牛加入，如果排名<span><span class="MathJax_Preview">&lt;=k</span><script type="math/tex"><=k</script></span>，<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>就<span><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span>，求所有牛的第k小即可</p>
+</details>
 <h2 id="e">E</h2>
 <div class="admonition note">
 <p class="admonition-title">题意</p>
 </div>
 <details class="note"><summary>题解</summary></details>
 <h2 id="f">F</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
-<details class="note"><summary>题解</summary></details>
+<details class="note"><summary>题解</summary><p>每位最多<span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span>种情况，直接暴力跑一遍即可</p>
+</details>
 <h2 id="g">G</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
-<details class="note"><summary>题解</summary></details>
+<details class="note"><summary>题解</summary><p><span><span class="MathJax_Preview">dp[i][j]</span><script type="math/tex">dp[i][j]</script></span>记录从<span><span class="MathJax_Preview">j</span><script type="math/tex">j</script></span>跳到<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>的最大得分，<span><span class="MathJax_Preview">f[i][j]</span><script type="math/tex">f[i][j]</script></span>记录相反方向，左右方向分别dp取最大值即可</p>
+</details>
 <h2 id="h">H</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
-<details class="note"><summary>题解</summary></details>
+<details class="note"><summary>题解</summary><p>考虑两棵平衡树，一个记录坐标，一个记录高度，每次找合法区间的最大值是否满足，正反各来一次即可。（也可以用单调队列或暴力）</p>
+</details>
 <h2 id="i">I</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
 <details class="note"><summary>题解</summary></details>
 <h2 id="j">J</h2>
-<div class="admonition note">
-<p class="admonition-title">题意</p>
-</div>
-<details class="note"><summary>题解</summary></details>
+<details class="note"><summary>题解</summary><p>状压<span><span class="MathJax_Preview">dp</span><script type="math/tex">dp</script></span>，<span><span class="MathJax_Preview">dp[sta]</span><script type="math/tex">dp[sta]</script></span>表示状态<span><span class="MathJax_Preview">sta</span><script type="math/tex">sta</script></span>下最多从<span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>开始购买的数量（前缀和），每次枚举当前没有花的钱币，二分查找即可。</p>
+</details>
 <h2 id="k">K</h2>
 <div class="admonition note">
 <p class="admonition-title">题意</p>
