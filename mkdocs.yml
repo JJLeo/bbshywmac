@@ -44,6 +44,8 @@ nav:
       - 个人计划: csk/plan.md
   - mjx: 
       - 个人计划: mjx/plan.md
+      - 刷题记录:
+          - Week1: mjx/problem/Week1.md
   - zyf: 
       - 个人计划: zyf/plan.md
       - 每日刷题记录: 
