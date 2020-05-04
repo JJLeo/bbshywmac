@@ -489,6 +489,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cf1348f" class="md-nav__link">
+    CF1348F
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -688,6 +695,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cf1348f" class="md-nav__link">
+    CF1348F
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -708,7 +722,7 @@
 <h2 id="cf1348e"><a href="https://codeforces.com/problemset/problem/1348/E">CF1348E</a></h2>
 <div class="admonition note">
 <p class="admonition-title">题意</p>
-<p><span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>棵树,每棵树上有<span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span>个红果实和<span><span class="MathJax_Preview">b_i</span><script type="math/tex">b_i</script></span>个蓝果实。有可以装<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>个果实的篮子,一个篮子只能放同种颜色或同一棵树上的果实。求最多可以放满多少个篮子</p>
+<p><span><span class="MathJax_Preview">n(n&lt;=500)</span><script type="math/tex">n(n<=500)</script></span>棵树,每棵树上有<span><span class="MathJax_Preview">a_i(a_i&lt;=10^9)</span><script type="math/tex">a_i(a_i<=10^9)</script></span>个红果实和<span><span class="MathJax_Preview">b_i(b_i&lt;=10^9)</span><script type="math/tex">b_i(b_i<=10^9)</script></span>个蓝果实。有可以装<span><span class="MathJax_Preview">k(k&lt;=500)</span><script type="math/tex">k(k<=500)</script></span>个果实的篮子,一个篮子只能放同种颜色或同一棵树上的果实。求最多可以放满多少个篮子</p>
 </div>
 <details class="note"><summary>题解</summary><p>若有<span><span class="MathJax_Preview">n(n&gt;=2)</span><script type="math/tex">n(n>=2)</script></span>个篮子装了颜色不同的果实,则一定可以将其转化为只装红色或蓝色果实的篮子和至多<span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span>个装不同颜色的篮子。</p>
 <p>设<span><span class="MathJax_Preview">dp_{i,j}</span><script type="math/tex">dp_{i,j}</script></span>为第<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>棵树装完后余下<span><span class="MathJax_Preview">j</span><script type="math/tex">j</script></span>个红果实所能装的最多的篮子数,令<span><span class="MathJax_Preview">sum=\sum_{j=1}^i{(a_j+b_j)}</span><script type="math/tex">sum=\sum_{j=1}^i{(a_j+b_j)}</script></span>此时蓝果实的个数应为<span><span class="MathJax_Preview">B=sum-dp[i][j]*k-j</span><script type="math/tex">B=sum-dp[i][j]*k-j</script></span></p>
@@ -716,6 +730,14 @@
 <p><span><span class="MathJax_Preview">dp[i+1][(j+a_i-s)\%k]=max\{dp[i+1][(j+a_i-s)\%k],dp[i][j]+1+(j+a_i-s)/k+(B+b_i-(k-s))/k\}</span><script type="math/tex">dp[i+1][(j+a_i-s)\%k]=max\{dp[i+1][(j+a_i-s)\%k],dp[i][j]+1+(j+a_i-s)/k+(B+b_i-(k-s))/k\}</script></span></p>
 <p>若在第<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>棵树不选择装不同颜色的篮子,则<span><span class="MathJax_Preview">dp[i+1][(j+a_i)\%k]=max\{dp[i+1][(j+a_i)\%k],dp[i][j]+(j+a_i)/k+(B+b_i)/k\}</span><script type="math/tex">dp[i+1][(j+a_i)\%k]=max\{dp[i+1][(j+a_i)\%k],dp[i][j]+(j+a_i)/k+(B+b_i)/k\}</script></span></p>
 <p>最后取最大值即可</p>
+</details>
+<h2 id="cf1348f"><a href="https://codeforces.com/problemset/problem/1348/F">CF1348F</a></h2>
+<div class="admonition note">
+<p class="admonition-title">题意</p>
+<p>长度为<span><span class="MathJax_Preview">n(n&lt;=2*10^5)</span><script type="math/tex">n(n<=2*10^5)</script></span>的序列,每个位置<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>上有<span><span class="MathJax_Preview">L_i,R_i</span><script type="math/tex">L_i,R_i</script></span>表明第<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>位上的数<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>只能为<span><span class="MathJax_Preview">L_i&lt;=x&lt;=R_i</span><script type="math/tex">L_i<=x<=R_i</script></span>,问是否有唯一的一种方案可以将<span><span class="MathJax_Preview">1,2...n</span><script type="math/tex">1,2...n</script></span>放入到序列中,如果有多种方案输出其中两种。</p>
+</div>
+<details class="note"><summary>题解</summary><p>我们可以先将<span><span class="MathJax_Preview">L_i,R_i</span><script type="math/tex">L_i,R_i</script></span>按照<span><span class="MathJax_Preview">L_i</span><script type="math/tex">L_i</script></span>排序,对于每一个数<span><span class="MathJax_Preview">now</span><script type="math/tex">now</script></span>,将所有<span><span class="MathJax_Preview">L_i&lt;=now</span><script type="math/tex">L_i<=now</script></span>的区间的<span><span class="MathJax_Preview">R_i</span><script type="math/tex">R_i</script></span>放入<span><span class="MathJax_Preview">set</span><script type="math/tex">set</script></span>中,找到比<span><span class="MathJax_Preview">now</span><script type="math/tex">now</script></span>大且最小的一个<span><span class="MathJax_Preview">R_i</span><script type="math/tex">R_i</script></span>,<span><span class="MathJax_Preview">now</span><script type="math/tex">now</script></span>即可放在位置<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>处,同时将<span><span class="MathJax_Preview">set</span><script type="math/tex">set</script></span>中<span><span class="MathJax_Preview">R_i</span><script type="math/tex">R_i</script></span>删除,这样我们即可找到一组合法解。</p>
+<p>如果有多种情况,必有一种情况为仅交换其中两个的顺序。考虑两个数<span><span class="MathJax_Preview">i,j(i&lt;j)</span><script type="math/tex">i,j(i<j)</script></span>,<span><span class="MathJax_Preview">pos_i</span><script type="math/tex">pos_i</script></span>代表<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>所在的位置,因此我们有<span><span class="MathJax_Preview">L_{pos_i}&lt;=i&lt;=R_{pos_i},L_{pos_j}&lt;=j&lt;=R_{pos_j}</span><script type="math/tex">L_{pos_i}<=i<=R_{pos_i},L_{pos_j}<=j<=R_{pos_j}</script></span>,若<span><span class="MathJax_Preview">i,j</span><script type="math/tex">i,j</script></span>可交换,则必有<span><span class="MathJax_Preview">L_{pos_j}&lt;=i&lt;j&lt;=R_{pos_i}</span><script type="math/tex">L_{pos_j}<=i<j<=R_{pos_i}</script></span>,因此用线段树维护区间<span><span class="MathJax_Preview">[l,r]</span><script type="math/tex">[l,r]</script></span>中<span><span class="MathJax_Preview">R[x]</span><script type="math/tex">R[x]</script></span>最大的点<span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span>即可</p>
 </details>
                 
               
