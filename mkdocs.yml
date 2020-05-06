@@ -40,6 +40,8 @@ nav:
       - Week1: 
           - DP: team/Week1-DP/train.md
           - 比赛: team/Week1-DP/contest.md
+      - Week2: 
+          - 压位: team/Week2/train.md
   - csk: 
       - 个人计划: csk/plan.md
   - mjx: 
